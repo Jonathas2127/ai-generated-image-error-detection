@@ -24,9 +24,9 @@ def main(argv=None) -> int:
         if args.command == "compare":
             result = compare(args.annotations, args.predictions_dir)
             args.output_dir.mkdir(parents=True, exist_ok=True)
-            (args.output_dir / "summary.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+            (args.output_dir / "summary.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8", newline="\n")
             markdown = markdown_report(result)
-            (args.output_dir / "comparison.md").write_text(markdown, encoding="utf-8")
+            (args.output_dir / "comparison.md").write_text(markdown, encoding="utf-8", newline="\n")
             print(markdown)
         else:
             result = evaluate(load_records(args.annotations, annotations=True), load_records(args.predictions))
