@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+from math import fsum
 from pathlib import Path
 
 LABELS = ("wrong", "weird", "unrealistic", "other")
@@ -61,7 +62,7 @@ def evaluate(truth: dict[str, set[str]], predictions: dict[str, set[str]]) -> di
     exact_count = sum(truth[k] == predictions[k] for k in truth)
     return dict(
         n=len(truth), exact_count=exact_count, exact_match=exact_count / len(truth),
-        macro_f1=sum(row["f1"] for row in per_label.values()) / len(LABELS),
+        macro_f1=fsum(row["f1"] for row in per_label.values()) / len(LABELS),
         micro_precision=_ratio(totals["tp"], totals["tp"] + totals["fp"]),
         micro_recall=_ratio(totals["tp"], totals["tp"] + totals["fn"]),
         micro_f1=_ratio(2 * totals["tp"], 2 * totals["tp"] + totals["fp"] + totals["fn"]),
