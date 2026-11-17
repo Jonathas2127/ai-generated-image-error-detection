@@ -1,7 +1,6 @@
 """Strict alignment and dependency-free multi-label evaluation."""
 from __future__ import annotations
 
-from collections import Counter
 import json
 from pathlib import Path
 
@@ -83,7 +82,7 @@ def compare(annotation_path: str | Path, prediction_dir: str | Path) -> dict:
     return dict(
         evaluation_policy=dict(undefined_precision_recall_f1=0, macro_labels=list(LABELS),
                                historical_predictions="preserved; no automatic label repair"),
-        dataset=dict(n=len(truth), label_counts=dict(Counter(label for labels in truth.values() for label in labels))),
+        dataset=dict(n=len(truth), label_counts={label: sum(label in labels for labels in truth.values()) for label in LABELS}),
         baselines=baselines, historical_runs=runs,
     )
 
