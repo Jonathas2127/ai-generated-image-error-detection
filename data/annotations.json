@@ -1,0 +1,656 @@
+[
+  {
+    "id": "1",
+    "filename": "image1.jpg",
+    "labels": [
+      "weird",
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "2",
+    "filename": "image2.jpg",
+    "labels": [
+      "weird",
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "3",
+    "filename": "image3.jpg",
+    "labels": [
+      "wrong",
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "4",
+    "filename": "image4.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "5",
+    "filename": "image5.jpg",
+    "labels": [
+      "wrong"
+    ]
+  },
+  {
+    "id": "6",
+    "filename": "image6.jpg",
+    "labels": [
+      "wrong",
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "7",
+    "filename": "image7.jpg",
+    "labels": [
+      "wrong"
+    ]
+  },
+  {
+    "id": "8",
+    "filename": "image8.jpg",
+    "labels": [
+      "wrong",
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "9",
+    "filename": "image9.jpg",
+    "labels": [
+      "wrong"
+    ]
+  },
+  {
+    "id": "10",
+    "filename": "image10.jpg",
+    "labels": [
+      "wrong",
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "11",
+    "filename": "image11.jpg",
+    "labels": [
+      "wrong",
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "12",
+    "filename": "image12.jpg",
+    "labels": [
+      "wrong"
+    ]
+  },
+  {
+    "id": "13",
+    "filename": "image13.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "14",
+    "filename": "image14.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "15",
+    "filename": "image15.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "16",
+    "filename": "image16.jpg",
+    "labels": [
+      "wrong",
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "17",
+    "filename": "image17.jpg",
+    "labels": [
+      "wrong",
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "18",
+    "filename": "image18.jpg",
+    "labels": [
+      "wrong",
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "19",
+    "filename": "image19.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "20",
+    "filename": "image20.jpg",
+    "labels": [
+      "wrong",
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "21",
+    "filename": "image21.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "22",
+    "filename": "image22.jpg",
+    "labels": [
+      "wrong"
+    ]
+  },
+  {
+    "id": "23",
+    "filename": "image23.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "24",
+    "filename": "image24.jpg",
+    "labels": [
+      "wrong",
+      "weird"
+    ]
+  },
+  {
+    "id": "25",
+    "filename": "image25.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "26",
+    "filename": "image26.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "27",
+    "filename": "image27.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "28",
+    "filename": "image28.jpg",
+    "labels": [
+      "weird"
+    ]
+  },
+  {
+    "id": "29",
+    "filename": "image29.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "30",
+    "filename": "image30.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "31",
+    "filename": "image31.jpg",
+    "labels": [
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "32",
+    "filename": "image32.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "33",
+    "filename": "image33.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "34",
+    "filename": "image34.jpg",
+    "labels": [
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "35",
+    "filename": "image35.jpg",
+    "labels": [
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "36",
+    "filename": "image36.jpg",
+    "labels": [
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "37",
+    "filename": "image37.jpg",
+    "labels": [
+      "weird"
+    ]
+  },
+  {
+    "id": "38",
+    "filename": "image38.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "39",
+    "filename": "image39.jpg",
+    "labels": [
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "40",
+    "filename": "image40.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "41",
+    "filename": "image41.jpg",
+    "labels": [
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "42",
+    "filename": "image42.jpg",
+    "labels": [
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "43",
+    "filename": "image43.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "44",
+    "filename": "image44.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "45",
+    "filename": "image45.jpg",
+    "labels": [
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "46",
+    "filename": "image46.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "47",
+    "filename": "image47.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "48",
+    "filename": "image48.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "49",
+    "filename": "image49.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "50",
+    "filename": "image50.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "51",
+    "filename": "image51.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "52",
+    "filename": "image52.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "53",
+    "filename": "image53.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "54",
+    "filename": "image54.jpg",
+    "labels": [
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "55",
+    "filename": "image55.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "56",
+    "filename": "image56.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "57",
+    "filename": "image57.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "58",
+    "filename": "image58.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "59",
+    "filename": "image59.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "60",
+    "filename": "image60.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "61",
+    "filename": "image61.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "62",
+    "filename": "image62.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "63",
+    "filename": "image63.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "64",
+    "filename": "image64.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "65",
+    "filename": "image65.jpg",
+    "labels": [
+      "wrong"
+    ]
+  },
+  {
+    "id": "66",
+    "filename": "image66.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "67",
+    "filename": "image67.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "68",
+    "filename": "image68.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "69",
+    "filename": "image69.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "70",
+    "filename": "image70.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "71",
+    "filename": "image71.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "72",
+    "filename": "image72.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "73",
+    "filename": "image73.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "74",
+    "filename": "image74.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "75",
+    "filename": "image75.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "76",
+    "filename": "image76.jpg",
+    "labels": [
+      "wrong"
+    ]
+  },
+  {
+    "id": "77",
+    "filename": "image77.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "78",
+    "filename": "image78.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "79",
+    "filename": "image79.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "80",
+    "filename": "image80.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "81",
+    "filename": "image81.jpg",
+    "labels": [
+      "unrealistic",
+      "weird"
+    ]
+  },
+  {
+    "id": "82",
+    "filename": "image82.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "83",
+    "filename": "image83.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "84",
+    "filename": "image84.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "85",
+    "filename": "image85.jpg",
+    "labels": [
+      "unrealistic"
+    ]
+  },
+  {
+    "id": "86",
+    "filename": "image86.jpg",
+    "labels": [
+      "wrong",
+      "weird"
+    ]
+  },
+  {
+    "id": "87",
+    "filename": "image87.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "88",
+    "filename": "image88.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "89",
+    "filename": "image89.jpg",
+    "labels": [
+      "other"
+    ]
+  },
+  {
+    "id": "90",
+    "filename": "image90.jpg",
+    "labels": [
+      "other"
+    ]
+  }
+]
