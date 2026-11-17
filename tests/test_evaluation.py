@@ -1,15 +1,31 @@
 """Checks for misleading metrics and damaged historical records."""
 import json
+from contextlib import redirect_stdout
+import io
 from pathlib import Path
 import tempfile
 import unittest
 
 from image_error_eval.evaluation import evaluate, load_records, compare
+from image_error_eval.__main__ import main
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class EvaluationTests(unittest.TestCase):
+    def test_cli_writes_canonical_lf_files(self):
+        with tempfile.TemporaryDirectory() as folder, redirect_stdout(io.StringIO()):
+            result = main([
+                "compare", "--annotations", str(ROOT / "data/annotations.json"),
+                "--predictions-dir", str(ROOT / "results/predictions"),
+                "--output-dir", folder,
+            ])
+            self.assertEqual(result, 0)
+            for name in ("summary.json", "comparison.md"):
+                contents = (Path(folder) / name).read_bytes()
+                self.assertNotIn(b"\r\n", contents)
+                self.assertTrue(contents.endswith(b"\n"))
+
     def test_metrics_on_hand_calculated_multilabel_example(self):
         truth = {"a.jpg": {"wrong", "weird"}, "b.jpg": {"other"}, "c.jpg": {"unrealistic"}}
         pred = {"c.jpg": set(), "b.jpg": {"other"}, "a.jpg": {"wrong"}}
