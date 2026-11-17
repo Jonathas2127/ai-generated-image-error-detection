@@ -12,9 +12,9 @@
   "dataset": {
     "n": 90,
     "label_counts": {
+      "wrong": 18,
       "weird": 17,
       "unrealistic": 45,
-      "wrong": 18,
       "other": 34
     }
   },
