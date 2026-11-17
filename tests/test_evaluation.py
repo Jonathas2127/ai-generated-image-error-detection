@@ -1,8 +1,11 @@
 """Checks for misleading metrics and damaged historical records."""
 import json
+import os
 from contextlib import redirect_stdout
 import io
 from pathlib import Path
+import subprocess
+import sys
 import tempfile
 import unittest
 
@@ -13,6 +16,22 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class EvaluationTests(unittest.TestCase):
+    def test_cli_reports_are_identical_across_hash_seeds(self):
+        summaries = []
+        comparisons = []
+        with tempfile.TemporaryDirectory() as folder:
+            for seed in ("1", "2", "3", "17"):
+                output = Path(folder) / seed
+                subprocess.run(
+                    [sys.executable, "-m", "image_error_eval", "compare", "--output-dir", str(output)],
+                    cwd=ROOT, env=dict(os.environ, PYTHONHASHSEED=seed),
+                    check=True, capture_output=True, timeout=20,
+                )
+                summaries.append((output / "summary.json").read_bytes())
+                comparisons.append((output / "comparison.md").read_bytes())
+        self.assertTrue(all(value == summaries[0] for value in summaries))
+        self.assertTrue(all(value == comparisons[0] for value in comparisons))
+
     def test_cli_writes_canonical_lf_files(self):
         with tempfile.TemporaryDirectory() as folder, redirect_stdout(io.StringIO()):
             result = main([
