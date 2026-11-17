@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Preserve historical whitespace inside the reference scripts' prompts.
+legacy/*.py -whitespace
